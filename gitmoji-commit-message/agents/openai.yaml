@@ -1,0 +1,4 @@
+interface:
+  display_name: "Gitmoji Commit Message"
+  short_description: "Draft concise Gitmoji commit subjects."
+  default_prompt: "Use $gitmoji-commit-message to choose pending or staged changes and generate Gitmoji shortcode commit messages."
