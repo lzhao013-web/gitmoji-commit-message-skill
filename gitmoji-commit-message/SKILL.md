@@ -9,8 +9,8 @@ description: Generate strict carloscuesta/gitmoji-style Git commit messages from
 
 Generate commit message options from the provided change context. If no diff or summary is provided, offer exactly two choices and wait for the user's selection:
 
-1. `待提交的所有修改`: inspect all pending changes, including staged, unstaged, and untracked files where practical.
-2. `已暂存的修改`: inspect staged changes only.
+1. `All pending changes`: inspect all pending changes, including staged, unstaged, and untracked files where practical.
+2. `Staged changes only`: inspect staged changes only.
 
 After the user selects one option, inspect only that source and clearly say which source was used. If the selected source has no changes, say so and do not invent a message.
 
@@ -33,18 +33,18 @@ Prefer an English commit subject unless the user explicitly asks for Chinese. Ke
 Return:
 
 ```text
-推荐：
+Recommended:
 <emoji shortcode> <message>
 
-原因：
-- <一句话解释>
+Reason:
+- <one-line explanation>
 
-备选：
+Alternatives:
 1. <emoji shortcode> <message>
 2. <emoji shortcode> <message>
 ```
 
-Only include `如果应该拆分：` when the diff clearly mixes independent topics.
+Only include `If this should be split:` when the diff clearly mixes independent topics.
 
 ## Rules
 
